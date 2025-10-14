@@ -277,6 +277,14 @@ The following features are planned for future versions:
 
 ---
 
+Test cases:
+1.Empty CSV (no rows): Should return empty dict.
+2.CSV with one department/semester and total_students: Should return correct batch info.
+3.CSV with missing total_students: Should not crash, may skip or use defaults.
+4.CSV with basket course (Course Code starts with 'B'): Should add ELECTIVE entry.
+5.CSV with multiple departments/semesters: Should return batch info for each.
+
 ### 9. Conclusion
 
 This user manual provides a guide to setting up and using the Time-table Automation System developed by the Software Psych team. The system automates the generation of academic timetables with conflict avoidance, proper room allocation, and staggered break times. It outputs comprehensive timetables for all departments and faculty members in Excel format. Future versions will add more features and enhance scheduling constraints. For support, contact the Software Psych development team.
+
